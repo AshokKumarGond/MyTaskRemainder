@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Task - Task Reminder</title>
+  <link rel="stylesheet" href="update.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔄 Update Task</h1>
+
+    <!-- Search task by ID -->
+    <div class="form-group">
+      <label for="searchId">Enter Task ID</label>
+      <input type="text" id="searchId" placeholder="Enter your Task ID">
+      <button onclick="findTask()" id="btn">Find Task</button>
+    </div>
+
+    <!-- Update form (hidden initially) -->
+    <form id="updateForm" class="hidden">
+      <div class="form-group">
+        <label for="taskName">Task Name</label>
+        <input type="text" id="taskName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="taskDate">Date for Reminder</label>
+        <input type="date" id="taskDate" required>
+      </div>
+
+      <div class="form-group">
+        <label for="taskTime">Time for Reminder</label>
+        <input type="time" id="taskTime" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" id="phoneNumber" required>
+      </div>
+
+      <div class="form-group">
+        <label for="reminderType">Reminder Type</label>
+        <select id="reminderType" required>
+          <option value="sms">SMS</option>
+          <option value="call">Call</option>
+        </select>
+      </div>
+
+      <button type="submit">Update Task</button>
+    </form>
+
+    <!-- Messages -->
+    <p id="message" class="hidden"></p>
+  </div>
+
+  <script src="update.js"></script>
+</body>
+</html>
