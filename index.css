@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.mainnav{
+    height: 80px;
+    background-color: #0f172a;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     
+ 
+}
+.navbar{
+  font-size: 25px;
+  color: white;
+}
+body {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url("for_body.jpg");
+  background-size: cover;
+  background-attachment: fixed;  
+  background-position: center;
+}
+
+
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;   /* removes bullets from <ul> */
+  gap: 220px;
+            /* space between items */
+}
+
+/* Style only the anchor tags inside .nav-links */
+.nav-links a {
+  text-decoration: none;  /* removes underline */
+  color: white;           /* makes text white */
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: orange;          /* hover effect */
+}
+#login{
+ color: white;
+ text-decoration: none;
+ font-size: 20px;
+ align-self: self-end;
+ margin-top: 0px;
+
+}
+.main_ideas{
+display: flex;
+align-items: center;
+margin-top: 50px;
+justify-content: space-evenly;
+
+}
+.AddTask{
+  height: 15.625rem;
+  width: 15.625rem;
+  border: 1px solid #faf3e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  /* margin-left: 100px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: url("add.png");
+  background-size: cover;
+  background-color: rgb(0, 188, 212);
+
+}
+.AddTask:hover {
+  transform: scale(1.1); /* increases size by ~10% */
+}
+
+.Update{
+  height: 15.625rem;
+  width: 15.625rem;
+  border: 1px solid #faf3e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  /* margin-left: 100px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: url("update.png");
+  background-size: cover;
+  background-color: rgb(106, 27, 154);
+}
+.Update:hover {
+  transform: scale(1.1); /* increases size by ~10% */
+}
+
+.SearchTask{
+  height: 15.625rem;
+  width: 15.625rem;
+  border: 1px solid #faf3e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  /* margin-left: 100px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: url("see.png");
+  background-size: cover;
+  background-color: rgb(206, 107, 32);
+}
+.SearchTask:hover{
+  transform: scale(1.1);
+}
+.DeleteTask{
+  height: 15.625rem;
+  width: 15.625rem;
+  border: 1px solid #faf3e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  /* margin-left: 100px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: url("delete.png");
+  background-size: cover;
+  background-color:  rgb(64, 224, 208);
+}
+.DeleteTask:hover{
+  transform: scale(1.1);
+}
+#tasks{
+  text-decoration: none;
+  color:black;
+  font-size: 1.462rem;
+}
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+.bg-video {
+  position: fixed;
+  top: 70px;                    
+  left: 0;
+  width: 100%;
+  height: calc(100% - 70px);   
+  object-fit: cover;            
+  z-index: -1;                  
+}
+.welcome{
+  height: 150px;
+  width: 100%;
+  margin-top: 180px;
+  text-align: center;
+
+}
+#welcometext{
+  font-size: 80px;
+  color: rgb(218, 235, 236);
+  padding-top: 60px;
+   
+
+}
+ 
